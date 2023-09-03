@@ -59,6 +59,14 @@ final class TaxonFixtureTest extends TestCase
     /**
      * @test
      */
+    public function taxon_position_is_optional(): void
+    {
+        $this->assertConfigurationIsValid([['custom' => [['position' => 'custom']]]], 'custom.*.position');
+    }
+
+    /**
+     * @test
+     */
     public function taxon_children_are_optional(): void
     {
         $this->assertConfigurationIsValid([['custom' => [['children' => [['name' => 'foo']]]]]], 'custom.*.children');

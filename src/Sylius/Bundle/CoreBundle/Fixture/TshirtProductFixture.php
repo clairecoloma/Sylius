@@ -73,6 +73,7 @@ class TshirtProductFixture extends AbstractFixture
                                     'slug' => 't-shirts/hommes',
                                 ],
                             ],
+                            'position' => 1,
                         ],
                         [
                             'code' => 'womens_t_shirts',
@@ -86,6 +87,7 @@ class TshirtProductFixture extends AbstractFixture
                                     'slug' => 't-shirts/femmes',
                                 ],
                             ],
+                            'position' => 0,
                         ],
                     ],
                 ],

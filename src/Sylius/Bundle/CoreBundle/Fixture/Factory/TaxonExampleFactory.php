@@ -107,6 +107,7 @@ class TaxonExampleFactory extends AbstractExampleFactory implements ExampleFacto
             ->setDefault('code', fn (Options $options): string => StringInflector::nameToCode($options['name']))
             ->setDefault('slug', null)
             ->setDefault('description', fn (Options $options): string => $this->faker->paragraph)
+            ->setDefault('position', 0)
             ->setDefault('translations', [])
             ->setAllowedTypes('translations', ['array'])
             ->setDefault('children', [])
